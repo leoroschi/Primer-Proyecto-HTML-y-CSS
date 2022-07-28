@@ -44,6 +44,8 @@ div h2, h3, h4, h5, h6 { /*Se aplica a todas las etiquetas de <h2>...<h5> que es
         2.2 #000000 (negro) #ffffff (blanc) #ff0000 (rojo) etc..
     3 - RGB (similar a hexadecimal pero de 0 a 255)
         color: rgb (255, 15, 160)
+    4 - RGBA (rgb + transparencia)
+        color: rgba(0-255,0-255,0-255,0-1) (0 totalmente transparente, 1 totalmente solido)
     }
 */
 
@@ -52,12 +54,55 @@ div h2, h3, h4, h5, h6 { /*Se aplica a todas las etiquetas de <h2>...<h5> que es
     ctrl + espacio da opciones de color (o despliega menú de sujerencias en general)
 */
 
-/* Estilos de linea (class="color")
-    .color  {        
+/* Bordes (class="color")
+    .color  {
+    1 - Estilos de borde    
     border: 4px black solid; 
     
     2D dotted, dashed solid double
     "3D" groove ridge inset outset
     - none hidden
+
+    2 - color del borde (lo mismo que colores)
+
+    3 - borde redondeado border-radius: *TAMAÑO
+    
+    4 - ancho del borde border-width: *TAMAÑO
+
+    Tamaño: Tipos de tamaño "absoluto" px ic ch mm
+    relativos em (al tamaño de la fuente) rem al tamaño relativo de la dimension de la etiqueta <html>
     }
 */
+
+
+
+.color {
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width:
+}
+
+#fondo {
+    height: 150px;
+    opacity: 0.99; /* Transparencia de todo el elemento *CREO que puede ser reemplazado por "a" del rgba del background color
+/*  background-color: brown;    
+     
+    background-image: url('rey.jpg');
+    background-size: 150px 150px;
+    background-repeat: no-repeat; /* repeat-x (repetición orizontal)
+    background-position: center center;
+    *Todo este bloque de codigo es reemplazado por
+ */
+    background: rgba(255,0,0,0.5) url('rey.jpg') repeat-y center bottom / 150px 150px;
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px; /* margenes arriba derecha abajo izquierda */
+    padding: 30px 25px 20px 15px; /* 1 valor = todos, 2 valores = vertic-horizont 3 valoes arriba horizontal abajo */
+    border: solid 1px black;
+    height: auto;
+    width: auto;
+    overflow: scroll; /* visible (por defecto), hidden (esconde lo que sobresale) scroll, permite escrolear */
+}
