@@ -1,0 +1,13 @@
+body {
+    color: tomato;
+}
+
+/*Podria poner h1 para todos los h1 o titulo para el que tiene ese ID*/
+#titulo {
+    color: tomato;
+}
+
+/*lo mismo con p o su clase*/
+.texto {
+    color:blue
+}

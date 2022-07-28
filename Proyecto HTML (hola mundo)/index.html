@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Tablas
+    th= centrado
+    td= alineado a la izquierda
+    -->
+    <center>
+    <table style="width: 500px;">
+        <thead>        
+            <tr>
+                <th> Producto </th>
+                <th> Precio </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Hola beats </td>
+                <td> Gratis  </td>
+            </tr>
+            <tr>
+                <td> Chanchito feliz </td>
+                <td> 19,90 UDS  </td>
+            </tr>
+            <tr>
+                <td> Chanchito feliz muy feliz </td>
+                <td> 1999,99 UDS  </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td> </td>
+                <td> Total: 2019,89 UDS  </td></tr>
+        </tfoot>
+    
+    </table>
+    </center>
+    <hr>
+    <button type="button"><a target="_blank" href="blog.html">Ir al blog</a></button>
+    <hr>
+    <!-- Ul listas no ordenadas -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <hr>
+        <!-- Ol listas ordenadas 
+        value indica el valor de inicio
+        -->
+        <ol>
+            <li value="10">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+                <ol>
+                    <li style="list-style-type:lower-roman;">Subelemento 1</li>
+                    <li style="list-style-type:lower-roman">Subelemento 2</li>
+                    <li style="list-style-type:lower-alpha">Subelemento 3</li>
+                </ol>
+            
+        </ol>
+    <hr>
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre:</label>
+        <input value="leo" type="text" id="nombre"  name="nombre" placeholder="Nombre" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="roschi" type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">valor por defecto, equivale al value="" de los otros imputs</textarea>
+        <br>
+        <!--type DEFAULT(text) submitt(boton) password(oculta el texto) radio(selección tipo radio)
+        checkbox(casilla de selección) file(seleccionador de archivos), etc...-->
+        
+        <!-- imput type="submit" es un botón del tipo submit
+        <input type="submit" />    
+        -->
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+        <!--button type (buttom/reset/submit)
+        buttom: especificar función (con javascript)
+        reset: devuelve los valores por defecto
+        submit:
+        -->
+        <br>
+        <button type="button"><img src="img/image.jpg" length="15%" width="15%"/><br>Botón Imagen</button>
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Chanchito feliz</h6>
+    <p>Chanchito feliz está muy feliz</p>
+    <p>Chanchito feliz está muy triste</p>
+    <hr>
+    <h2>Chanchito Felipe</h2>
+    <p>Mas texto y mucho mas <span style="color:blue">texto mucho</span> <br> mas largo para la etiqueta de span</p>
+    <!--Perro Malvado no aparece en el explorador-->
+    <a target="_blank" href="https://www.google.com">Ir a google</a>
+    <br>
+    <img src="img/image.jpg" width="50%"/>
+</body>
+</html>
