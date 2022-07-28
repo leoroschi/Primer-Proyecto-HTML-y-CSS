@@ -2,12 +2,62 @@ body {
     color: tomato;
 }
 
-/*Podria poner h1 para todos los h1 o titulo para el que tiene ese ID*/
+/*Podria poner h1 para todos los h1 o #titulo para el que tiene ese id: (identificador)*/
 #titulo {
     color: tomato;
 }
 
-/*lo mismo con p o su clase*/
-.texto {
+/*Lo mismo con <p> o su clase*/
+.texto { /*.texto se aplica a todas las classes "texto" (class="texto") independientemente de su etiqueta*/
     color:blue
 }
+
+p.especial { /*Encambio p.especial se aplica a todas las etiquetas de <p> que contengan la clase "especial"*/
+    color:blueviolet
+}
+/*El orden de la ejecucion del código IMPORTA
+Notar como la etiqueta de <p> que contiene la clase especial y la clase texto queda con el color de la clase especial
+debido a que el selector p.especial está despues del selector .texto
+*/
+
+div p { /*Se aplica a todas las etiquetas de <p> que estén dentro de un <div> o SUBETIQUETAS de <div>*/
+    color:aquamarine
+}
+
+div h2, h3, h4, h5, h6 { /*Se aplica a todas las etiquetas de <h2>...<h5> que estén dentro de un <div> o SUBETIQUETAS de <div>*/
+    color:brown
+}
+
+* { /*Se aplica a todos los elementos del documento html
+    es un selector universal, pero el selector particular tiene prioridad
+    */
+    font-size: 25px;
+    color: black;
+}
+
+/*  Colores (class="color")
+    .color { 
+    1 - por selección (sujerencia de vs code)
+    2 - por hexadecimal (0,1... -e, f) con 6 o 3 caracteres
+        color: #ff150e
+        2.1 #000 (negro) #f00 (rojo) #0f0 (verde) #00f (azul) #fff (blanco)
+        2.2 #000000 (negro) #ffffff (blanc) #ff0000 (rojo) etc..
+    3 - RGB (similar a hexadecimal pero de 0 a 255)
+        color: rgb (255, 15, 160)
+    }
+*/
+
+/*
+    border: agrega un borde a los elementos html
+    ctrl + espacio da opciones de color (o despliega menú de sujerencias en general)
+*/
+
+/* Estilos de linea (class="color")
+    .color  {        
+    border: 4px black solid; 
+    
+    2D dotted, dashed solid double
+    "3D" groove ridge inset outset
+    - none hidden
+    }
+*/
